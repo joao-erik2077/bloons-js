@@ -1,0 +1,26 @@
+{
+  "name": "bloons-js",
+  "version": "1.1.0",
+  "description": "",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "exports": {
+    ".": {
+      "require":  "./cjs/my-lib.js",
+      "default": "./esm/my-lib.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joao-erik2077/bloons-js.git"
+  },
+  "keywords": [],
+  "author": "João Érik da Silva Crisóstomo <joaoerik2074@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}
