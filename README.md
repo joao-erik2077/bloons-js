@@ -1,4 +1,5 @@
 # bloons-js
+A wrapper to work with the [StatsNite Bloons TD 6 API](https://statsnite.com/btd/api)
 
 # Install
 `$ npm install bloons-js --save`
