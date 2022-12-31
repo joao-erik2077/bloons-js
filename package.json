@@ -1,13 +1,13 @@
 {
   "name": "bloons-js",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "",
-  "main": "./cjs/index.js",
-  "module": "./esm/index.js",
+  "main": "./src/cjs/index.cjs",
+  "module": "./src/esm/index.mjs",
   "exports": {
     ".": {
-      "require":  "./cjs/my-lib.js",
-      "default": "./esm/my-lib.js"
+      "require":  "./src/cjs/index.cjs",
+      "default": "./src/esm/index.mjs"
     }
   },
   "scripts": {
