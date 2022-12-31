@@ -1,45 +1,12 @@
-const fetch = require('./utils.cjs');
+const { getAllTowers, getTower } = require('./Tower.cjs');
+const { getAllHeroes, getHero } = require('./Hero.cjs');
+const { getAllBloons, getBloon } = require('./Bloon.cjs');
 
 module.exports = { 
-    async getAllTowers(onlyId) {
-        const response = await fetch(`https://statsnite.com/api/btd/v3/towers?id=${onlyId}`);
-        const data = await response.json();
-    
-        return data;
-    },
-
-    async getTower(id) {
-        const response = await fetch(`https://statsnite.com/api/btd/v3/tower/${id}`);
-        const data = await response.json();
-    
-        return data;
-    },
-
-    async getAllBloons(onlyId) {
-        const response = await fetch(`https://statsnite.com/api/btd/v3/bloons?id=${onlyId}`);
-        const data = await response.json();
-    
-        return data;
-    },
-
-    async getBloon(id) {
-        const response = await fetch(`https://statsnite.com/api/btd/v3/bloon/${id}`);
-        const data = await response.json();
-    
-        return data;
-    },
-
-    async getAllHeroes(onlyId) {
-        const response = await fetch(`https://statsnite.com/api/btd/v3/heroes?id=${onlyId}`);
-        const data = await response.json();
-    
-        return data;
-    },
-
-    async getHero(id) {
-        const response = await fetch(`https://statsnite.com/api/btd/v3/hero/${id}`);
-        const data = await response.json();
-    
-        return data;
-    }
+    getAllTowers,
+    getTower,
+    getAllHeroes,
+    getHero,
+    getAllBloons,
+    getBloon
 };

@@ -1,6 +1,6 @@
 {
   "name": "bloons-js",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "",
   "main": "./src/cjs/index.cjs",
   "module": "./src/esm/index.mjs",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/joao-erik2077/bloons-js.git"
   },
-  "keywords": [],
+  "keywords": ["wrapper", "btd6", "commonjs", "module"],
   "author": "João Érik da Silva Crisóstomo <joaoerik2074@gmail.com>",
   "license": "MIT",
   "dependencies": {
