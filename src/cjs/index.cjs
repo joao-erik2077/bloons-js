@@ -1,6 +1,6 @@
-const { getAllTowers, getTower } = require('./Tower.cjs');
-const { getAllHeroes, getHero } = require('./Hero.cjs');
-const { getAllBloons, getBloon } = require('./Bloon.cjs');
+const { getAllTowers, getTower, getTowerImage } = require('./Tower.cjs');
+const { getAllHeroes, getHero, getHeroImage } = require('./Hero.cjs');
+const { getAllBloons, getBloon, getBloonImage } = require('./Bloon.cjs');
 
 module.exports = { 
     getAllTowers,
@@ -8,5 +8,8 @@ module.exports = {
     getAllHeroes,
     getHero,
     getAllBloons,
-    getBloon
+    getBloon,
+    getTowerImage,
+    getBloonImage,
+    getHeroImage
 };

@@ -14,3 +14,14 @@ export async function getTower(id) {
 
     return data;
 }
+
+export async function getTowerImage(towerId, level) {
+    if (!level || level === undefined) level = 'tower';
+    const image = `https://statsnite.com/images/btd/towers/${towerId}/${level}.png`;
+    const response = await fetch(image);
+
+    if (response.ok)
+        return image;
+    else
+        return new Error('Image not found');
+}

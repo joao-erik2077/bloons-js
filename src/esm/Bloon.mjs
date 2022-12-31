@@ -13,3 +13,14 @@ export async function getBloon(id) {
 
     return data;
 }
+
+export async function getBloonImage(bloonId, type) {
+    if (!type || type === undefined) type = 'base';
+    const image = `https://statsnite.com/images/btd/bloons/${bloonId}/${type}.png`;
+    const response = await fetch(image);
+
+    if (response.ok)
+        return image;
+    else
+        return new Error('Image not found');
+}
